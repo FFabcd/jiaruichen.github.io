@@ -15,11 +15,10 @@
 
 ```text
 jiaruichen224.github.io/
-├── assets/
-│   ├── aied-logo.png
-│   ├── campus.jpeg
-│   ├── profile.png
-│   └── scnu-logo.png
+├── aied-logo.png
+├── campus.jpeg
+├── profile.png
+├── scnu-logo.png
 ├── index.html
 ├── styles.css
 ├── script.js

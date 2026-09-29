@@ -77,7 +77,7 @@ img { display: block; max-width: 100%; }
   background:
     linear-gradient(90deg, rgba(232, 244, 255, 0.12), rgba(255, 255, 255, 0.58) 48%, rgba(224, 240, 255, 0.2)),
     linear-gradient(180deg, rgba(7, 63, 115, 0.1), rgba(255, 255, 255, 0.06)),
-    url("assets/campus.jpeg") center / cover no-repeat;
+    url("campus.jpeg") center / cover no-repeat;
 }
 
 .campus-banner img {
