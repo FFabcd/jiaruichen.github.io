@@ -1,80 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="陈佳锐的学术主页：个人介绍、教育经历、获奖荣誉、学术论文与发明专利。">
+  <meta name="theme-color" content="#073f73">
   <title>陈佳锐 | Jiarui Chen</title>
-  <style>
-    body {
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 0 24px;
-      font-family: Arial, "Microsoft YaHei", sans-serif;
-      line-height: 1.7;
-      color: #24292f;
-    }
-
-    h1, h2 {
-      color: #0969da;
-    }
-
-    a {
-      color: #0969da;
-      text-decoration: none;
-    }
-
-    .subtitle {
-      color: #57606a;
-      font-size: 18px;
-    }
-  </style>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23073f73'/%3E%3Cpath d='M14 17h34v7H35v23c0 7-4 11-11 11-4 0-7-1-10-3l3-7c2 1 4 2 6 2 3 0 4-1 4-4V24H14z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <h1>陈佳锐 | Jiarui Chen</h1>
+  <a class="skip-link" href="#main">跳到主要内容</a>
 
-  <p class="subtitle">
-    Master's Student at South China Normal University
-  </p>
+  <header class="site-header">
+    <div class="campus-banner">
+      <img src="assets/aied-logo.png" alt="教育人工智能研究院">
+    </div>
+    <div class="header-inner">
+      <a class="brand" href="#about" aria-label="返回首页">
+        <img src="assets/scnu-logo.png" alt="华南师范大学">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">打开导航</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="主要导航">
+        <a href="#about">个人介绍</a>
+        <a href="#education">教育经历</a>
+        <a href="#honors">获奖荣誉</a>
+        <a href="#publications">学术论文</a>
+        <a href="#patents">发明专利</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>
-    研究方向：知识图谱、大语言模型、多模态学习与人工智能教育应用。
-  </p>
+  <main id="main">
+    <section id="about" class="hero section-shell" aria-labelledby="hero-title">
+      <div class="portrait-wrap">
+        <div class="portrait-frame">
+          <img src="assets/profile.png" alt="陈佳锐证件照">
+        </div>
+        <div class="status-card">
+          <strong>硕士研究生</strong>
+          <span>华南师范大学</span>
+        </div>
+      </div>
 
-  <h2>About Me</h2>
-  <ul>
-    <li>华南师范大学现代教育技术专业硕士研究生</li>
-    <li>研究生综合成绩排名 1/74</li>
-    <li>研究生国家奖学金获得者</li>
-  </ul>
+      <div class="hero-copy">
+        <p class="eyebrow">ACADEMIC PROFILE</p>
+        <h1 id="hero-title">陈佳锐 <span>Jiarui Chen</span></h1>
+        <p class="role">现代教育技术 · 人工智能与教育交叉研究</p>
+        <p class="summary">
+          华南师范大学教育信息技术学院硕士研究生，胡小勇教授团队成员，综合成绩排名第一。
+          研究聚焦知识图谱、大语言模型、课堂行为分析与多智能体，关注人工智能方法在教育场景中的可解释应用。
+        </p>
 
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Knowledge Graph Completion</li>
-    <li>Large Language Models</li>
-    <li>Multimodal Learning</li>
-    <li>AI in Education</li>
-  </ul>
+        <dl class="profile-grid">
+          <div>
+            <dt>研究方向</dt>
+            <dd>知识图谱 · 大语言模型 · 多模态学习 · AI in Education</dd>
+          </div>
+          <div>
+            <dt>所在院校</dt>
+            <dd>华南师范大学</dd>
+          </div>
+          <div>
+            <dt>导师</dt>
+            <dd>胡小勇教授、薛增灿副研究员</dd>
+          </div>
+          <div>
+            <dt>邮箱</dt>
+            <dd><a href="mailto:2025020896@m.scnu.edu.cn">2025020896@m.scnu.edu.cn</a></dd>
+          </div>
+        </dl>
+      </div>
 
-  <h2>Selected Publications</h2>
-  <ol>
-    <li>
-      Exploring contextual and pairwise semantic-enhanced embedding
-      with adaptive fusion for knowledge graph completion.
-      <em>Information Processing & Management</em>, 2026.
-    </li>
-    <li>
-      A decomposed-distilled sequential framework for text-to-table
-      task with LLMs. <em>PRICAI 2024</em>.
-    </li>
-  </ol>
+      <aside class="achievement-rail" aria-label="研究概览">
+        <div><strong>1 / 74</strong><span>综合成绩排名</span></div>
+        <div><strong>5</strong><span>已列学术成果</span></div>
+        <div><strong>3</strong><span>国家发明专利</span></div>
+      </aside>
+    </section>
 
-  <h2>Contact</h2>
-  <p>
-    Email:
-    <a href="mailto:2025020896@m.scnu.edu.cn">
-      2025020896@m.scnu.edu.cn
-    </a>
-  </p>
+    <section id="education" class="content-section section-shell" aria-labelledby="education-title">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <p>EDUCATION</p>
+          <h2 id="education-title">教育经历</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">2025.09 — 至今</div>
+          <div class="timeline-body">
+            <div class="item-heading">
+              <h3>华南师范大学</h3>
+              <span>双一流建设高校 · 211 工程</span>
+            </div>
+            <p class="degree">现代教育技术 · 硕士研究生</p>
+            <p>主修课程：信息化教学资源开发与应用（92）、信息技术课程与教材研究（91）</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">2021.09 — 2025.06</div>
+          <div class="timeline-body">
+            <div class="item-heading">
+              <h3>华南师范大学</h3>
+              <span>双一流建设高校 · 211 工程</span>
+            </div>
+            <p class="degree">计算机科学与技术（师范）· 学士</p>
+            <p>主修课程：自然语言处理（99）、Python 程序设计及应用（95）、现代教育技术（91）</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="honors" class="content-section section-shell" aria-labelledby="honors-title">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <p>HONORS</p>
+          <h2 id="honors-title">获奖荣誉</h2>
+        </div>
+      </div>
+
+      <div class="honors-list">
+        <article class="honor primary-honor">
+          <time>2026—2027</time>
+          <div>
+            <span class="honor-level">国家级荣誉</span>
+            <h3>研究生国家奖学金</h3>
+            <p>全年级唯一获奖者，排名 1/74</p>
+          </div>
+        </article>
+        <article class="honor">
+          <time>2025—2027</time>
+          <div>
+            <span class="honor-level">校级荣誉</span>
+            <h3>研究生入学、学业奖学金一等奖</h3>
+            <p>连续两年获奖</p>
+          </div>
+        </article>
+        <article class="honor">
+          <time>2024—2025</time>
+          <div>
+            <span class="honor-level">校级荣誉</span>
+            <h3>华南师范大学优秀毕业论文</h3>
+          </div>
+        </article>
+        <article class="honor">
+          <time>2022—2025</time>
+          <div>
+            <span class="honor-level">校级荣誉</span>
+            <h3>学校综合优秀学生奖学金</h3>
+            <p>连续三年获得二等奖、三等奖</p>
+          </div>
+        </article>
+        <article class="honor">
+          <time>2022—2023</time>
+          <div>
+            <span class="honor-level">校级荣誉</span>
+            <h3>优秀学生社团干部</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="content-section section-shell" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div>
+          <p>PUBLICATIONS</p>
+          <h2 id="publications-title">学术论文</h2>
+        </div>
+      </div>
+
+      <div class="publication-group">
+        <div class="group-label">已发表成果</div>
+        <ol class="publication-list">
+          <li>
+            <article>
+              <p class="authors">Xue, Z., <strong>Chen, J.</strong>, Hu, X., &amp; Lin, Z.</p>
+              <h3>Exploring contextual and pairwise semantic-enhanced embedding with adaptive fusion for knowledge graph completion</h3>
+              <p class="venue"><em>Information Processing &amp; Management</em>, 63, 104849, 2026</p>
+              <div class="tags"><span>学生一作</span><span>SSCI &amp; SCI</span><span>中科院一区 TOP</span></div>
+              <p class="paper-note">构建混合粒度语义增强机制，并以不同尺寸的自适应卷积核融合知识图谱中的全局与局部特征。</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p class="authors">薛增灿、张晓冉、<strong>陈佳锐</strong> 等</p>
+              <h3>基于关系语义的知识图谱补全研究综述</h3>
+              <p class="venue">《数据分析与知识发现》, 10(2): 1–22, 2026</p>
+              <div class="tags"><span>学生二作</span><span>CSSCI</span></div>
+              <p class="paper-note">基于 133 篇代表性文献梳理关系语义知识图谱补全技术，并总结多模态、时序数据和大模型幻觉等研究问题。</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p class="authors"><strong>Chen, J.</strong>, Li, S., &amp; Jiang, Y.</p>
+              <h3>A decomposed-distilled sequential framework for text-to-table task with LLMs</h3>
+              <p class="venue"><em>PRICAI 2024: Trends in Artificial Intelligence</em>, pp. 403–410</p>
+              <div class="tags"><span>第一作者</span><span>CCF-C</span></div>
+              <p class="paper-note">提出轻量化分解—蒸馏序列框架，在低资源条件下改善关键信息抽取与表格生成。</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p class="authors">穆肃、钟佳林、<strong>陈佳锐</strong> 等</p>
+              <h3>人工智能融入中小学教育全场域和多场景研究——基于我国 35 份政策文件的分析</h3>
+              <p class="venue">《中国教育信息化》, 32(4): 14–24, 2026</p>
+              <div class="tags"><span>学生二作</span><span>AMI</span></div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p class="authors"><strong>陈佳锐</strong>、王艺、林典辑</p>
+              <h3>基于大模型的教育评价多智能体构建研究</h3>
+              <p class="venue">IFET, 2025</p>
+              <div class="tags"><span>第一作者</span><span>国际会议</span></div>
+            </article>
+          </li>
+        </ol>
+      </div>
+
+      <details class="under-review">
+        <summary>在投稿件（2）</summary>
+        <div class="review-list">
+          <article>
+            <p class="authors">Xue, Z., <strong>Chen, J.</strong>, Hu, X.</p>
+            <h3>From Quantity to Quality: Boosting LLM-based Inductive Knowledge Graph Reasoning via Geometric Aggregation and Memory Augmentation</h3>
+            <p class="venue">AAAI 2027 · Under Review</p>
+          </article>
+          <article>
+            <p class="authors">Xue, Z., Fangqing Xiong, <strong>Chen, J.</strong>, Hu, X.</p>
+            <h3>CARE: Cognitive Adaptive Refinement and Mixture-of-Experts Fusion for Multimodal Knowledge Graph Completion</h3>
+            <p class="venue">AAAI 2027 · Under Review</p>
+          </article>
+        </div>
+      </details>
+    </section>
+
+    <section id="patents" class="content-section section-shell" aria-labelledby="patents-title">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div>
+          <p>PATENTS</p>
+          <h2 id="patents-title">发明专利</h2>
+        </div>
+      </div>
+
+      <div class="patent-grid">
+        <article class="patent featured">
+          <div class="patent-topline"><time>2026.09</time><span>已授权</span></div>
+          <h3>一种问答情境的分析方法、系统、设备及介质</h3>
+          <p class="patent-number">专利号：202610089472.1 · 第二作者</p>
+          <p>分析课堂问答链及其核心情境要素，动态构建情境要素关系图谱，挖掘问答链的情境密度与情境强度。</p>
+        </article>
+        <article class="patent">
+          <div class="patent-topline"><time>2024.10</time><span>已受理</span></div>
+          <h3>基于智慧校园的大学生信息管理系统</h3>
+          <p class="patent-number">申请号：202410613168.3 · 第一作者</p>
+          <p>构建智慧校园信息管理模型，对大学生信息进行分类存储、权限管理和关联分析。</p>
+        </article>
+        <article class="patent">
+          <div class="patent-topline"><time>2024.10</time><span>已受理</span></div>
+          <h3>一种学生信息识别系统及其使用方法</h3>
+          <p class="patent-number">申请号：202410613162.6 · 第一作者</p>
+          <p>通过学生身份信息的特征提取与匹配识别，提高学生信息自动化识别的准确性和效率。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="section-shell footer-inner">
+      <div>
+        <strong>陈佳锐 · Jiarui Chen</strong>
+        <p>华南师范大学教育信息技术学院</p>
+      </div>
+      <a href="mailto:2025020896@m.scnu.edu.cn">2025020896@m.scnu.edu.cn</a>
+    </div>
+  </footer>
 </body>
 </html>
